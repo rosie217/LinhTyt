@@ -1,48 +1,105 @@
 <!DOCTYPE html>
 <html lang="vi" class="no-js">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Chúc mừng 8/3</title>
-		<link rel="shortcut icon" href="./rose.png">
-		<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
-		<link rel="stylesheet" type="text/css" href="./style.css">
-		<script>document.documentElement.className = "js";
 
-var supportsCssVars = function supportsCssVars() {
-  var e,
-      t = document.createElement("style");
-  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-};
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rosie</title>
+	<link rel="shortcut icon" href="./rose.png">
+	<link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>document.documentElement.className = "js";
 
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body class="demo-1 loading">
-		<main>
-			<div class="content">
-				<div class="grid">
-					<div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover" ></div></div>
-					<div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-4"><div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-5"><div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-6"><div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-7"><div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-8"><div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-9"><div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div></div>
-					<div class="grid__item pos-10"><div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div></div>
+		var supportsCssVars = function supportsCssVars() {
+			var e,
+				t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+		};
+
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="demo-1 loading">
+	<main>
+		<div class="content" id="noidung" style="display: none;">
+			<div class="grid">
+				<div class="grid__item pos-2">
+					<div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover"></div>
 				</div>
-                <h2 class="content__title no-select">
-					<span>Giang Giang</span>
-				</h2>
-				<h2 class="content__title no-select">
-					<span class="content__title-sub" style= "margin-top: 50px;">Chúc cậu 8/3 vui vẻ, hạnh phúc!</span>
-				</h2>
+				<div class="grid__item pos-3">
+					<div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-4">
+					<div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-1">
+					<div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-5">
+					<div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-6">
+					<div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-7">
+					<div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-8">
+					<div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-9">
+					<div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div>
+				</div>
+				<div class="grid__item pos-10">
+					<div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div>
+				</div>
 			</div>
-		</main>
-        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
-		</svg>
-		<script src="./script.js"></script>
-	</body>
+			<h2 class="content__title no-select">
+				<span>Chào em</span>
+			</h2>
+			<h2 class="content__title no-select">
+				<span class="content__title-sub" style="margin-top: 50px;">Chúc Khánh Linh ngày mới vui vẻ, hạnh
+					phúc!</span>
+			</h2>
+		</div>
+		<div class="content"id="frmPassword">
+				<span style="margin-bottom:20px; font-size:larger;">Xin mời bạn nhập mật khẩu</span>
+				<input type="password" id="txtPasss" style="margin-bottom:20px;">
+				<button type="button" id="btnSubmit" style="color: #fff; background-color: #d05400;"> Hoàn tất </button>
+				<span style="margin-bottom:20px; font-size:larger;display:none;" id="err" >Mật khẩu sai xin mời bạn nhập lại</span>
+		</div>
+	</main>
+	<svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
+		<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+	</svg>
+	<script src="./script.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#btnSubmit").click(function () {
+				checkjs()
+			})
+			$("#txtPasss").on('keypress', function (event) {
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if (keycode == '13') {
+					checkjs()
+				}
+			})
+			function checkjs()
+			{
+				var pass = $("#txtPasss").val()
+				if (pass == "khanhlinh") {
+					$("#frmPassword").css("display", "none")
+					$("#noidung").css("display", "flex")
+					$("err").css("display","none");
+				}
+				else
+				{
+					$("#err").css("display","block");
+				}
+			}
+		});
+	</script>
+</body>
+
 </html>
